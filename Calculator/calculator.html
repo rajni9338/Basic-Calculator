@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Calculator</title>
+
+<script src="calculator.js"></script>
+
+<style>
+
+.button {
+margin: 2px;
+text-align: center;
+font-size: 16px;
+text-decoration: none;
+width: 50px;
+height: 50px;
+}
+
+.textview{
+
+    width: 220px;
+    height: 35px;
+    margin-bottom: 2px;
+    background-color: rgb(238, 236, 236);
+}
+
+.main{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) ;
+
+  
+}
+
+.bg{
+    color: rgb(240, 241, 241);
+    background-image: linear-gradient(to bottom,rgb(235, 137, 46), rgba(170, 0, 94, 0.63));
+    min-height: 100vh;
+    overflow-y: hidden;
+    
+}
+
+.bg h1{
+    padding-top: 10vh;
+    text-align: center;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+        <div class="bg"> 
+            <h1>Basic Calculator</h1>
+        </div>
+
+    <div class="main"> 
+        
+
+    <form name= "form">
+        <input class="textview" name="textview" readonly><br>
+    </form>
+    
+    <button class="button" onclick="clean()">AC</button>
+
+    <button class="button" onclick="back()"><<</button>
+
+    <button class="button" onclick="insert('%')">%</button>
+
+    <button class="button" onclick="insert('/')">/</button><br>   
+
+    <button class="button" onclick="insert(1)">1</button>
+
+    <button class="button" onclick="insert(2)">2</button>
+
+    <button class="button" onclick="insert(3)">3</button>
+
+    <button class="button" onclick="insert('*')">X</button><br>
+
+    <button class="button" onclick="insert(4)">4</button>
+
+    <button class="button" onclick="insert(5)">5</button>
+
+    <button class="button" onclick="insert(6)">6</button>
+
+    <button class="button" onclick="insert('-')">-</button><br>
+
+    <button class="button" onclick="insert(7)">7</button>
+
+    <button class="button" onclick="insert(8)">8</button>
+
+    <button class="button" onclick="insert(9)">9</button>
+
+    <button class="button" onclick="insert('+')">+</button><br>
+
+    <button class="button" style="width: 107.5px;" onclick="equal()">=</button>
+    
+    <button class="button" onclick="insert(0)">0</button>
+
+    <button class="button" onclick="insert('.')">.</button>
+
+    
+
+    </div>
+
+</body>
+
+
+</html>
